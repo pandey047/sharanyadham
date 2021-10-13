@@ -1,0 +1,85 @@
+﻿    {% extends "base.html" %}
+    {% load static %}
+    {% block meta %}
+
+    <title>Vedas | शरण्य धाम</title>
+    <meta name="description" content="The Vedas are a large body of religious texts originating in ancient India.">
+    <meta name="keywords" content="Vedas , religious , Sanskrit, ancient India, Rigveda, Yajurveda, Samaveda and Atharvaveda, Sharanyadham">
+
+    {% endblock %}
+    {% block content %}
+
+    <div id="content-wrapper">
+        <section id="portfolio" class="white">
+            <div class="container">
+                <div class="gap"></div>
+                <div class="center gap fade-down section-heading">
+                    <h2 class="main-title">
+                        धार्मिक ग्रन्थ
+                    </h2>
+                    <hr>
+                    <p>
+                        वेद प्राचीन भारत में उत्पन्न धार्मिक ग्रंथों का एक बड़ा निकाय है। वैदिक संस्कृत में रचित, ग्रंथ संस्कृत साहित्य की सबसे पुरानी परत है
+                        और हिंदू धर्म के सबसे पुराने शास्त्र। हिंदू वेदों को अपौरुषेय मानते हैं, जिसका अर्थ है "मनुष्य का नहीं, अलौकिक" और "अवैयक्तिक, अधिकारहीन"।
+                        वेदों को (श्रुति ("क्या सुना जाता है") साहित्य भी कहा जाता है, उन्हें अन्य धार्मिक ग्रंथों से अलग किया जाता है, जिन्हें स्मुति ("जो याद किया जाता है") कहा जाता है।
+                        रूढ़िवादी भारतीय धर्मशास्त्रियों के लिए वेद, प्राचीन ऋषियों द्वारा गहन ध्यान के बाद देखे गए रहस्योद्घाटन, और ऐसे ग्रंथ हैं जिन्हें अधिक ध्यान से देखा गया है
+                        प्राचीन काल से संरक्षित है। हिंदू महाकाव्य महाभारत में, वेदों की रचना का श्रेय ब्रह्मा को दिया जाता है।
+                        वैदिक स्वयं का दावा करते हैं कि वे कुशलता से ऋषियों (ऋषियों) द्वारा बनाए गए थे, प्रेरित रचनात्मकता के बाद, जैसे एक बढ़ई रथ बनाता है।
+                        परंपरा के अनुसार, व्यास वेदों के संकलनकर्ता हैं, जिन्होंने चार प्रकार के मंत्रों को चार संहिता (संग्रह) में व्यवस्थित किया।
+                        चार वेद हैं: ऋग्वेद, यजुर्वेद, सामवेद और अथर्ववेद।
+                        प्रत्येक वेद को चार प्रमुख पाठ प्रकारों में समाहित किया गया है जैसे कि संहिता (मंत्र और मंत्र), अरण्यक (अनुष्ठानों, समारोहों, बलिदानों और प्रतीकात्मक-बलिदानों पर पाठ), ब्राह्मणों (अनुष्ठानों, समारोहों और बलिदानों पर टिप्पणी), और
+                        उपनिषद (ध्यान, दर्शन और आध्यात्मिक ज्ञान पर चर्चा करने वाले ग्रंथ)। कुछ विद्वान पाँचवीं श्रेणी जोड़ते हैं - उपासना (उपासना)।
+                    </p>
+                    <p style="font-family:courier; text-transform:none;">
+                        The Vedas are a large body of religious texts originating in ancient India. Composed in Vedic Sanskrit, the Granth is the oldest layer of Sanskrit literature and the oldest scripture of Hinduism. Hindus consider the Vedas to be apolitical, meaning "not of man, supernatural" and "impersonal, authorityless". The Vedas (also called Shruti ("what is heard") literature) are distinguished from other religious texts, called Smuti ("that which is remembered").
+                        For orthodox Indian theologians, the Vedas, the revelations seen after intense meditation by ancient sages, and texts that have been observed more carefully have been preserved since ancient times. In the Hindu epic Mahabharata, the creation of the Vedas is attributed to Brahma. The Vedic themselves claim that they were skillfully created by sages (sages), following inspired creativity, such as a carpenter makes a chariot.
+                        According to tradition, Vyasa is the compiler of the Vedas, who arranged the four types of mantras into the Char Samhita (collection). The four Vedas are: Rigveda, Yajurveda, Samaveda and Atharvaveda. Each Veda is contained in four major text types such as Samhita (mantras and mantras), Aranyakas (recitations on rituals, ceremonies, sacrifices and symbolic-sacrifices), Brahmins (commentaries on rituals, ceremonies and sacrifices), and Upanishads (commentaries on rituals). Texts discussing meditation, philosophy and spiritual knowledge).
+                    </p>
+                </div>
+
+                <ul class="portfolio-items col-3 isotope fade-up">
+
+                    <li class="portfolio-item apps isotope-item">
+                        <div class="item-inner">
+                            <img src="{% static 'sharanya_main\images\ved\rigveda.jpg' %}" alt="">
+                            <h5>Rigveda</h5>
+                            <div class="overlay">
+                                <a class="preview btn btn-outlined btn-primary" href="{% url 'gallery' %}"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+
+                    <li class="portfolio-item apps isotope-item">
+                        <div class="item-inner">
+                            <img src="{% static 'sharanya_main\images\ved\yajurveda.jpg' %}" alt="">
+                            <h5>Yajurveda</h5>
+                            <div class="overlay">
+                                <a class="preview btn btn-outlined btn-primary" href="{% url 'gallery' %}"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+
+                    <li class="portfolio-item apps isotope-item">
+                        <div class="item-inner">
+                            <img src="{% static 'sharanya_main\images\ved\samaveda.jpg' %}" alt="">
+                            <h5>Samaveda</h5>
+                            <div class="overlay">
+                                <a class="preview btn btn-outlined btn-primary" href="{% url 'gallery' %}"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+
+                    <li class="portfolio-item apps isotope-item">
+                        <div class="item-inner">
+                            <img src="{% static 'sharanya_main\images\ved\atharvaveda.jpg' %}" alt="">
+                            <h5>Atharvaveda</h5>
+                            <div class="overlay">
+                                <a class="preview btn btn-outlined btn-primary" href="{% url 'gallery' %}"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                </ul>
+            </div>
+        </section>
+    </div>
+    {% endblock %}

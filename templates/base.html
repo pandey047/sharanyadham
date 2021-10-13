@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'sharanya_main/images/ico/favicon.ico' %}" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {% block meta %}
+    <!-- START -- REQUIRED IN ALL PAGES FOR SEO -->
+    <!-- <meta name="description" content="Sharanyadham is a Shani Mandir and Naugrah Mandir located in Gola, Gorakhpur, UP. This temple is the confluence center for all the devotees who wish to worship any particular planet or all the nine schemes with the desire of any kind of welfare.">
+    <meta name="keywords" content="Sharanyadham, Sharanya dham, Mandir, temple, Navagraha , Naugrah Mandir, Shani Mandir Gola, Shani Mandir Gorakhpur, Hindu, Hindu mythology">    
+  
+    <title> शरण्य धाम | Sharanyadham Shani Mandir Gola Gorakhpur UP</title> -->
+    {% endblock %}
+    <link href="{% static 'sharanya_main/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'sharanya_main/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'sharanya_main/css/pe-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'sharanya_main/css/prettyPhoto.css' %}" rel="stylesheet">
+    <link href="{% static 'sharanya_main/css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'sharanya_main/css/style.css' %}" rel="stylesheet">
+    <script src="{% static 'sharanya_main/js/jquery.js' %}"></script>
+    
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+	'use strict';
+      	jQuery('body').backstretch([
+	        "static/sharanya_main/images/bg/bg1.jpg",
+	        "static/sharanya_main/images/bg/bg2.jpg",
+			"static/sharanya_main/images/bg/bg3.jpg",
+	        "static/sharanya_main/images/bg/bg4.jpg",
+			"static/sharanya_main/images/bg/bg5.jpg",
+	        "static/sharanya_main/images/bg/bg6.jpg"
+	    ], {duration: 5000, fade: 500, centeredY: true });
+
+		$("#mapwrapper").gMap({ controls: false,
+         	scrollwheel: false,
+         	markers: [{
+              	latitude:26.35944444,
+				longitude: 83.34666667,
+          	icon: { image: "static/sharanya_main/images/marker.png",
+              	iconsize: [44,44],
+          		iconanchor: [12,46],
+          		infowindowanchor: [12, 0] } }],
+          	icon: {
+              	image: "static/sharanya_main/images/marker.png",
+             	iconsize: [26, 46],
+              	iconanchor: [12, 46],
+              	infowindowanchor: [12, 0] },
+         	latitude:26.35944444,
+         	longitude: 83.34666667,
+          	zoom: 14 });
+    });
+    </script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154453746-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-154453746-1');
+    </script>
+    <!-- END -- REQUIRED IN ALL PAGES FOR SEO -->
+    
+</head><!--/head-->
+<body>
+    <div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/"><h1><img src="{% static 'sharanya_main/images/logo/Logo_32x32.png' %}" width="30" height="30" class="d-inline-block align-top" alt="Image"> शरण्य धाम</h1></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Home</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hindu Mythology<i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'ved' %}">Ved</a></li>
+                            <li><a href="{% url 'puran' %}">Puran</a></li>
+                            <li><a href="{% url 'upnishads' %}">Upanishads</a></li>
+                            <li><a href="{% url 'geeta' %}">Geeta</a></li>
+                            <li><a href="{% url 'ramcharitmanas' %}">Ramcharitmanas</a></li>
+                            <li><a href="{% url 'god' %}">God</a></li>
+                            <li><a href="{% url 'goddess' %}">Goddess</a></li>
+                            <li><a href="{% url 'naugrah' %}">Naughrah</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'event' %}">Events</a></li>
+                    <li><a href="{% url 'pooja' %}">Pooja</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'contactus' %}">Contact</a></li>
+                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                    <li><span class="search-trigger"><i class="fa fa-search"></i></span></li>
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+
+    {% block content %}
+
+    {% endblock %}
+
+    <div id="footer-wrapper">
+        <section id="bottom" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 about-us-widget">
+                        <h4>Hindu Literature</h4>
+                        <ul class="arrow">
+                            <li><a href="{% url 'ved' %}">Ved</a></li>
+                            <li><a href="{% url 'puran' %}">Puran</a></li>
+                            <li><a href="{% url 'upnishads' %}">Upanishads</a></li>
+                            <li><a href="{% url 'geeta' %}">Geeta</a></li>
+                        </ul>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6 about-us-widget">
+                        <h4>Hindu Mythology</h4>
+                        <ul class="arrow">
+                            <li><a href="{% url 'ramcharitmanas' %}">Ramcharitmanas</a></li>
+                            <li><a href="{% url 'god' %}">God</a></li>
+                            <li><a href="{% url 'goddess' %}">Goddess</a></li>
+                            <li><a href="{% url 'naugrah' %}">Naughrah</a></li>
+                        </ul>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Social Media</h4>
+                        <div>
+                            <ul class="arrow">
+                                <li><a href="https://www.facebook.com/ShaniMandirGolaGorakhpur" target="_blank">Facebook</a></li>
+                                <li><a href="#">Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Come See Us</h4>
+                        <address>
+                            Village: Atroura,<br>
+                            Post: Gola Bazar<br>
+                            District: Gorakhpur<br>
+                            State: Uttar Pradesh<br>
+                            Pincode: 273408<br>
+                            <abbr title="Phone"><i class="fa fa-phone"></i></abbr> +91-8447190367
+                        </address>
+                    </div> <!--/.col-md-3-->
+                </div>
+            </div>
+        </section><!--/#bottom-->
+
+        <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        &copy; 2020, www.sharanyadham.com. All Rights Reserved.
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->
+    </div>
+
+
+    <script src="{% static 'sharanya_main/js/plugins.js' %}"></script>
+    <script src="{% static 'sharanya_main/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'sharanya_main/js/jquery.prettyPhoto.js' %}"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyIdzUZtHPBcRQurFya1WeLj81aSayAIw&amp;sensor=true"></script>
+    <script src="{% static 'sharanya_main/js/init.js' %}"></script>
+    {% block script %}
+    {% endblock %}
+</body>
+</html>

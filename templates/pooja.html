@@ -1,0 +1,59 @@
+﻿    {% extends "base.html" %}
+    {% load static %}
+    {% block meta %}
+
+    <title>Shri Ganesh Chalisa In Hindi and English | शरण्य धाम</title>
+    <!-- START -- REQUIRED IN ALL PAGES FOR SEO -->
+    <meta name="description" content="Pooja is essentially a ritual or ceremonial worship, in which offerings are made with devotion to earn love and blessings from God.">
+    <meta name="keywords" content="Hinduism,Arti, Mantra, Chalisa, God, Sharanyadham,worship , Sharanya dham, Mandir, temple">
+
+    {% endblock %}
+    {% block content %}
+
+    <div id="content-wrapper">
+        <section id="portfolio" class="white">
+            <div class="container">
+                <div class="gap"></div>
+                <div class="center gap fade-down section-heading">
+                    <img src="{% static 'sharanya_main/images/common/aarti.jpg' %}"  class="img-responsive">
+                    <div class="center gap fade-down section-heading">
+                        <h3 class="main-title">संग्रह</h3>
+                        <h3 class="main-title">Collection</h3>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ul class="arrow">
+                                    <li class="read-more-wrapper">
+                                        <a href="{% url 'aarti' %}" class="btn btn-outlined btn-primary">आरती संग्रह - Aarti</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul class="arrow">
+                                    <li class="read-more-wrapper">
+                                        <a href="{% url 'mantra' %}" class="btn btn-outlined btn-primary">मंत्र संग्रह  - Mantra</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul class="arrow">
+                                    <li class="read-more-wrapper">
+                                        <a href="{% url 'chalisa' %}" class="btn btn-outlined btn-primary">चालीसा संग्रह - Chalisa</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        हिंदू धर्म में, पूजा अनिवार्य रूप से एक अनुष्ठान या औपचारिक पूजा है, जिसमें भगवान से प्यार और आशीर्वाद अर्जित करने के लिए भक्ति के साथ प्रसाद बनाया जाता है। यद्यपि बाह्य रूप से यह एक यांत्रिक अनुष्ठान के रूप में प्रकट हो सकता है, इसका एक छिपा हुआ महत्व है। पूजा का कार्य किसी के पूरे मन और शरीर, विचारों, इच्छाओं, कार्यों और संपत्ति का एक प्रतीकात्मक प्रस्ताव है (जो कुछ भी है और जो है) भगवान की भक्ति और समर्पण के निशान के रूप में, जो कुछ भी उपहार के रूप में मिलता है उसका आनंद लेना |
+                    </p>
+                    <p style=" text-transform:none;">
+                        In Hinduism, worship is essentially a ritual or ceremonial worship, in which offerings are made with devotion to earn love and blessings from God. Although externally it may appear as a mechanical ritual, it has a hidden significance. The act of worship is a symbolic proposition of one's whole mind and body, thoughts, desires, actions and possessions (whatever it is and that is) as a mark of devotion and dedication to God, whatever it gets as a gift Enjoy it.
+                    </p>
+
+                </div>    
+            </div>
+        </section>
+    </div>
+
+    {% endblock %}
